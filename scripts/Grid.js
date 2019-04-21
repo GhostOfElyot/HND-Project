@@ -175,63 +175,63 @@ class Grid {
 
 			//normalise
 
-			if(i < 15){
-			}else{
-				if(this.direction.x < 0 && this.tiles[i-15].upgrade > 0){
-					this.direction.x = 0;
-					console.log("test");
-				}else if (this.direction.x > 0 && this.tiles[i-15].upgrade > 0){
-					this.direction.x = 2;
-				}
-			}
+			// if(i < 15){
+			// }else{
+			// 	if(this.direction.x < 0 && this.tiles[i-15].upgrade > 0){
+			// 		this.direction.x = 0;
+			// 		console.log("test");
+			// 	}else if (this.direction.x > 0 && this.tiles[i-15].upgrade > 0){
+			// 		this.direction.x = 2;
+			// 	}
+			// }
 
-			if(i > this.height * this.width - 16){
-			}else{
-				if(this.direction.x > 0 && this.tiles[i+15].upgrade > 0){
-					this.direction.x = 0;
-					console.log("test");
-				}else if (this.direction.x < 0 && this.tiles[i+15].upgrade > 0){
-					this.direction.x = -2;
-				}
-			}
+			// if(i > this.height * this.width - 16){
+			// }else{
+			// 	if(this.direction.x > 0 && this.tiles[i+15].upgrade > 0){
+			// 		this.direction.x = 0;
+			// 		console.log("test");
+			// 	}else if (this.direction.x < 0 && this.tiles[i+15].upgrade > 0){
+			// 		this.direction.x = -2;
+			// 	}
+			// }
 
-			if(i % 15 == 0){
-			}else{
-				if(this.direction.y < 0 && this.tiles[i-1].upgrade > 0){
-					this.direction.y = 0;
-					console.log("test");
-				}else if (this.direction.y > 0 && this.tiles[i-1].upgrade > 0){
-					this.direction.y = 2;
-				}
-			}
+			// if(i % 15 == 0){
+			// }else{
+			// 	if(this.direction.y < 0 && this.tiles[i-1].upgrade > 0){
+			// 		this.direction.y = 0;
+			// 		console.log("test");
+			// 	}else if (this.direction.y > 0 && this.tiles[i-1].upgrade > 0){
+			// 		this.direction.y = 2;
+			// 	}
+			// }
 
-			if((i + 1) % 15 == 0){
-			}else if(i + 1 == this.height*this.width){
-			}else{
-				if(this.direction.y > 0 && this.tiles[i+1].upgrade > 0){
-					this.direction.y = 0;
-					console.log("test");
-				}else if (this.direction.y < 0 && this.tiles[i+1].upgrade > 0){
-					this.direction.y = -2;
-				}
-			}
+			// if((i + 1) % 15 == 0){
+			// }else if(i + 1 == this.height*this.width){
+			// }else{
+			// 	if(this.direction.y > 0 && this.tiles[i+1].upgrade > 0){
+			// 		this.direction.y = 0;
+			// 		console.log("test");
+			// 	}else if (this.direction.y < 0 && this.tiles[i+1].upgrade > 0){
+			// 		this.direction.y = -2;
+			// 	}
+			// }
 
-			if(this.direction.x < 0 && this.direction.y < 0 && this.tiles[i-16].upgrade > 0){
-				this.direction.y = 0;
-			}
-			if(this.direction.x < 0 && this.direction.y > 0 && this.tiles[i-14].upgrade > 0){
-				this.direction.y = 0;
-			}
-			if(this.tiles[i+14] != null){
-				if(this.direction.x > 0 && this.direction.y < 0 && this.tiles[i+14].upgrade > 0){
-					this.direction.y = 0;
-				}
-			}
-			if(this.tiles[i+16] != null){
-				if(this.direction.x > 0 && this.direction.y > 0 && this.tiles[i+16].upgrade > 0){
-					this.direction.y = 0;
-				}
-			}
+			// if(this.direction.x < 0 && this.direction.y < 0 && this.tiles[i-16].upgrade > 0){
+			// 	this.direction.y = 0;
+			// }
+			// if(this.direction.x < 0 && this.direction.y > 0 && this.tiles[i-15].upgrade > 0){
+			// 	this.direction.y = 0;
+			// }
+			// if(this.tiles[i+14] != null){
+			// 	if(this.direction.x > 0 && this.direction.y < 0 && this.tiles[i+14].upgrade > 0){
+			// 		this.direction.y = 0;
+			// 	}
+			// }
+			// if(this.tiles[i+16] != null){
+			// 	if(this.direction.x > 0 && this.direction.y > 0 && this.tiles[i+16].upgrade > 0){
+			// 		this.direction.y = 0;
+			// 	}
+			// }
 
 			this.tiles[i].directionToGoal = this.direction;
 

@@ -22,7 +22,7 @@ class Enemy{
 	}
 
 	update(grid_){
-		debugger;
+		// debugger;
 
 
 		if(this.vol.x < grid_.tiles[grid_.returnTile(this.x,this.y)].directionToGoal.x && grid_.tiles[grid_.returnTile(this.x,this.y)].directionToGoal.x > 0){
